@@ -1,0 +1,21 @@
+<app-nav-bar></app-nav-bar>
+
+<div style="width: 100%; height: 100%; background-color:#f6f3f3;">
+  <div style="text-align: center;">
+  Bem-vindo, {{ currentUser }}!
+</div>
+<!--<button routerLink="" class="btnLogin">Login</button>-->
+  <div class="container">
+  <div class="input-group mb-3" style="width:50%">
+    <input type="text" class="form-control" placeholder="Pesquise aqui" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="input-group-text" id="basic-addon1" style="width: 8%; height:auto;"><img style="width: 100%;" [src]="lupa" alt="" class="mundo"></button>
+  </div>
+  </div>
+  <div style="align-items:center; height: 9vh;  padding-bottom: 2vh;" class="container">
+    <img [src]="imgEua"alt="" style="height:100%; width: auto; margin-right: 5vh; border-radius: 1vh;"/> 
+    <img [src]="imgCanada"alt="" style="height:100%; width: auto; margin-right: 5vh; border-radius: 1vh;"/>
+    <img [src]="imgUK"alt="" style="height:100%; width: auto; margin-right: 5vh;border-radius: 1vh;"/>
+    <img [src]="imgItalia"alt="" style="height:100%; width: auto; margin-right: 5vh;border-radius: 1vh;"/>
+    <img [src]="imgFranca"alt="" style="height:100%; width: auto; margin-right: 5vh;border-radius: 1vh;"/>
+  </div>
+  </div>

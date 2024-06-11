@@ -1,0 +1,44 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<app-nav-bar></app-nav-bar>
+  
+  <div class="container" style="overflow: hidden;position: flex;">
+  <div class="box" style="text-align: center;">
+    <img [src]="imgLogin" alt="" style="width:30%;"/> <h4><b style="color: #001b5e;">CADASTRE-SE</b></h4>
+    <div style= "width: 100%; text-align: center;" >
+      <div class="form-group" style="text-align:left; margin-bottom:2%;">   
+        <input class="col-xs-3 " autocomplete="off" type="text" class="form-control" [(ngModel)]="user.name" aria-describedby="emailHelp" placeholder="Nome"required>
+      </div>
+      <div class="form-group" style="text-align:left; margin-bottom:2%;">
+        <input class="col-xs-3" autocomplete="off" type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="user.email" aria-describedby="emailHelp" placeholder="Email"required>
+      </div>
+      <div class="form-group" style="text-align: left; margin-bottom:5%; float:left;width: 50%;">
+        <input type="password" autocomplete="off" class="form-control" id="exampleInputPassword1" [(ngModel)]="user.password1"  placeholder="Senha"required>
+      </div> 
+      <div class="form-group" style="text-align:left; margin-bottom:5%; float:left;width: 50%;">   
+        <input class="col-xs-3" autocomplete="off" type="password" class="form-control" aria-describedby="emailHelp" [(ngModel)]="user.password2" placeholder="Repita sua Senha"required>
+      </div>
+      <br>
+      <button type="button" (click)="onSubmit()" class="btn btn-primary" id="buttom;" [disabled]="!user.name || !user.email || !user.password1 || !user.password2" style="width: 30%;">CADASTRE-SE</button> <br> <br>
+      <a routerLink="" style="align-items:right;">Já possui conta?</a>
+      <br><br>
+    </div>
+  </div>
+</div>
+
+
+<script> 
+var fechar = 0;
+$(document).ready(function(){
+$("#btndrop").click(function(){
+if(fechar == 0){
+  $("#drop").hide();
+fechar = 1;
+}
+else{
+ $("#drop").hide();
+fechar = 0;
+}
+}); 
+});
+</script>
