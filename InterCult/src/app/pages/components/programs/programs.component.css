@@ -1,0 +1,27 @@
+.programs {
+    margin-bottom: 40px;
+    margin-left: 1vh;
+}
+
+.programs h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.programs p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.programs-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.program {
+    width: calc(25% - 10px);
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 5px;
+}

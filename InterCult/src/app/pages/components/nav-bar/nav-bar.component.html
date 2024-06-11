@@ -1,19 +1,12 @@
-<ul class="nav nav-tabs dropbox" style="height: 8.2vh;overflow: hidden">
-    <li class="nav-item dropdown" style="width: 47.8%;">
-        <button class="nav-link dropdown-toggle dropbox" id="btndrop" data-bs-toggle="dropdown" role="button" aria-expanded="false"  style="margin: 0;"><img [src]="dropbox" alt=""class="mundo" style="height: 90%;"></button>
-        <ul class="nav flex-column shadow p-3 mb-5 bg-body-tertiary rounded" style="height:90vh; width: 50%; display: none;" id="drop">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-    </li> <li style="width: 50%;" class="dropbox"> <img [src]="logo" alt="" class="mundo" ></li> 
-  </ul>
+<ul class="nav nav-tabs dropbox">
+  <li class="nav-item dropdown" *ngIf="!disableDropdowns">
+    <app-drop-box></app-drop-box>
+  </li>
+  <li class="nav-item">
+    <p>interCult</p>
+    <img [src]="logo" alt="" class="mundo">
+  </li>
+  <li class="nav-item" *ngIf="!disableDropdowns">
+    <app-login-dropdown></app-login-dropdown>
+  </li>
+</ul>

@@ -1,6 +1,6 @@
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<app-nav-bar></app-nav-bar>
+<app-nav-bar [disableDropdowns]="true"></app-nav-bar>
   
   <div class="container" style="overflow: hidden;position: flex;">
   <div class="box" style="text-align: center;">
@@ -26,19 +26,3 @@
   </div>
 </div>
 
-
-<script> 
-var fechar = 0;
-$(document).ready(function(){
-$("#btndrop").click(function(){
-if(fechar == 0){
-  $("#drop").hide();
-fechar = 1;
-}
-else{
- $("#drop").hide();
-fechar = 0;
-}
-}); 
-});
-</script>

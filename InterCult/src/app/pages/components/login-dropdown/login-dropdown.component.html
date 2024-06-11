@@ -1,0 +1,15 @@
+<div class="dropdown">
+    <button class="dropbtn" (click)="toggleDropdown()">  
+        <p>Login</p> 
+        <img [src]="perfil" class="dropbox">
+    </button>
+    <div class="dropdown-content" [class.show]="isOpen">
+        <ul class="drop-itens">
+            <li class="itens"><a href="#">Perfil</a></li>
+            <li class="itens"><a href="#">Agências</a></li>
+            <li class="itens"><a href="#">Favoritos</a></li>
+            <li class="itens"><a href="#">Configurações</a></li>
+        </ul>
+    </div>
+</div>
+
